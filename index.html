@@ -14,8 +14,8 @@
 <body>
   <section class="header">
     <nav><a href="index.html"><img src="logo.png"></a>
-<div class="nav-links">
-  <i class="fa fa-times"></i>
+<div class="nav-links" id="navLinks">
+    <i class="fa fa-times" onclick="hideMenu()"></i>
 <ul>
     <li><a href="">HOME</a></li>
     <li><a href="">ABOUT</a></li>
@@ -25,7 +25,7 @@
 </ul>
 
 </div>
-<i class="fa fa-bars"></i>
+<i class="fa fa-bars" onclick="showMenu()"></i>
 </nav>
 <div class="text-box">
   <h1>World's Biggest University</h1>
@@ -33,5 +33,57 @@
   <a href="" class="hero-btn">Visit Us to know More</a>
 </div>
   </section>
+  <section class="course">
+    <h1>Courses we Offer</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="course-col">
+            <h3>Intermediate</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet ipsum enim similique nihil laborum officia porro laboriosam tempore totam aspernatur, corrupti molestiae itaque quasi alias ad ex ratione dolorum ab sequi corporis at!</p>
+        </div>
+        <div class="course-col">
+            <h3>Degree</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet ipsum enim similique nihil laborum officia porro laboriosam tempore totam aspernatur, corrupti molestiae itaque quasi alias ad ex ratione dolorum ab sequi corporis at!</p>
+        </div>
+        <div class="course-col">
+            <h3>Post Graduation</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis amet ipsum enim similique nihil laborum officia porro laboriosam tempore totam aspernatur, corrupti molestiae itaque quasi alias ad ex ratione dolorum ab sequi corporis at!</p>
+        </div>
+    </div>
+</section>
+<section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="london.png" alt="">
+            <div class="layer">
+                <h3>LONDON</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="newyork.png" alt="">
+            <div class="layer">
+                <h3>NEW YORK</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="washington.png" alt="">
+            <div class="layer">
+                <h3>WASHINGTON</h3>
+            </div>
+        </div>
+    </div>
+</section>
+  <script>
+    /*Javascript for Toggle menu*/
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+        navLinks.style.right = "0";
+    }
+    function hideMenu() {
+        navLinks.style.right = "-200px";
+    }
+  </script>
 </body>
 </html>
